@@ -1,20 +1,20 @@
-day = int(input("Введите день: "))
-month = int(input("Введите месяц: "))
+day = int(input("Введите день: ")) #запрос даты
+month = int(input("Введите месяц: ")) #запрос месяца
 
-if month == 4 or month == 6 or month == 9 or month == 11:
-    if day > 30:
-        print("Дата введена неверно.")
-        exit(0)
+if month == 4 or month == 6 or month == 9 or month == 11: 
+    if day > 30: #проверка месяца и даты
+        print("Дата введена неверно.") #вывод на экран
+        exit(0) #выход при ошибке
         
-if day > 31 or day < 1 or month > 12 or month < 1:
-    print("Дата введена неверно.")
-elif month == 2 and day > 28:
-    print("Дата введена неверно.")
-elif 1 <= month <= 2 or month == 12:
-    print("Зима")
-elif 3 <= month <= 5:
-    print("Весна")
-elif 6 <= month <= 8:
-    print("Лето")
-else:
-    print("Осень")
+if day > 31 or day < 1 or month > 12 or month < 1: #проверка месяца и даты
+    print("Дата введена неверно.") #вывод на экран
+elif month == 2 and day > 28: #проверка месяца и даты
+    print("Дата введена неверно.") #вывод на экран
+elif 1 <= month <= 2 or month == 12: #проверка месяца
+    print("Зима") #вывод на экран
+elif 3 <= month <= 5: #проверка месяца
+    print("Весна") #вывод на экран
+elif 6 <= month <= 8: #проверка месяца
+    print("Лето") #вывод на экран
+else: #выполняется при ошибке
+    print("Осень") #вывод на экран
